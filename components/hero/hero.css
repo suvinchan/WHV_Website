@@ -1,0 +1,150 @@
+/* The hero styles */
+.hero {
+    position: relative;
+    min-height: calc(90vh - 80px);
+    overflow: hidden;
+    background: url('../../assets/images/hero-bg.jpg'); /* The hero background image */
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* The hero content styles */
+.hero__content {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 8rem 2rem 2rem;
+    color: white;
+    z-index: 2;
+}
+
+/* The hero title styles */
+.hero__title {
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: "La Belle Aurore", cursive; /* The hero title font */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* The hero description text styles */
+.hero__description {
+    font-size: 1.1rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
+    max-width: 350px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* The hero CTA(call of action) button styles */
+.hero__cta {
+    display: inline-block; /* The CTA button display */
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
+    background: #000;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.hero__cta:hover {
+    background: #333;
+}
+
+/* The hero country selector styles*/
+.hero__country-selector {
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    z-index: 2;
+} 
+
+
+
+
+
+.hero__country-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.hero__country-subtitle {
+    font-size: 0.6rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.hero__select {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Shoelace component custom styles */
+sl-select::part(combobox) {
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+
+}
+
+/* The hero media queries */
+@media (max-width: 768px) {
+    .hero__content {
+        padding-top: 6rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+    }
+
+    .hero__country-selector {
+        bottom: 10%;
+        width: 85%;
+    }
+}
+
+/* The hero media queries for mobile devices */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__content {
+        padding-top: 4rem;
+    }
+    
+    .hero__country-selector {
+        padding: 1.5rem;
+    }
+}
