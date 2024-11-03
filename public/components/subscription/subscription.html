@@ -1,0 +1,31 @@
+<!-- The subscription component -->
+<div class="subscription">
+    <h2 class="subscription__title">Subscribe Latest WHV News!</h2> <!-- The subscription title -->
+    
+    <div class="subscription__container">
+        <form class="subscription__form">
+            <div class="subscription__field">
+                <label for="name">Name</label> <!-- The name label -->
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="subscription__field">
+                <label for="email">E-mail</label> <!-- The email label -->
+                <input type="email" id="email" name="email" required> <!-- The email input -->
+            </div>
+
+            <div class="subscription__field">
+                <label for="country">Select your passport country</label> <!-- The country label -->
+                <select id="country" name="country" required> <!-- The country select -->
+                    <option value="" disabled selected>Select a country</option> <!-- The country select option, disabled and selected -->
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </div>
+
+            <button type="submit" class="subscription__submit">Subscribe</button> <!-- The subscribe button -->
+        </form>
+    </div>
+</div> 

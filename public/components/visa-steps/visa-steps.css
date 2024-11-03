@@ -1,0 +1,104 @@
+/* The visa steps styles */
+.visa-steps {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.visa-steps__title {
+    text-align: center;
+    color: #5f818e;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-family: "Jost", sans-serif;
+}
+
+.visa-steps__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.visa-steps__item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* The visa steps number styles(4 steps) */
+.visa-steps__number {
+    flex-shrink: 0;
+    width: 200px;
+    padding: 1rem;
+    background-color: #9EBAD2;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+}
+
+.visa-steps__content {
+    flex-grow: 1;
+    border-bottom: 1px solid #e2e8f0;
+    font-family: "Jost", sans-serif;
+}
+
+/* The visa steps header styles */
+.visa-steps__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.visa-steps__header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    font-style: italic;
+    font-family: "Jost", sans-serif;
+
+}
+
+/* The visa steps toggle styles */
+.visa-steps__toggle {
+    background: none;
+    border: none;
+    color: #4a5568;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.visa-steps__toggle.active {
+    transform: rotate(45deg);
+}
+
+/* The visa steps description styles */
+.visa-steps__description {
+    display: none;
+    padding: 1rem 0;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.visa-steps__description.active {
+    display: block;
+}
+
+/* The visa steps media queries */
+@media (max-width: 768px) {
+    .visa-steps__item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .visa-steps__number {
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auwhv - Working Holiday</title>
+     <!-- Google Font: DM Sans -->
+     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia:wght@100..700&family=La+Belle+Aurore&display=swap" rel="stylesheet">     <!-- Base Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <!-- Shoelace -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+    <link rel="stylesheet" href="components/hero/hero.css">
+    <link rel="stylesheet" href="components/visa-info/visa-info.css">
+    <link rel="stylesheet" href="components/visa-steps/visa-steps.css">
+    <link rel="stylesheet" href="components/experience/experience.css">
+    <link rel="stylesheet" href="components/work/work.css">
+    <link rel="stylesheet" href="components/subscription/subscription.css">
+    <link rel="stylesheet" href="components/travel/travel.css">
+    <!-- Main Script -->
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div id="hero"></div>
+        <div id="visa-info"></div>
+        <div id="visa-steps"></div>
+        <div id="experience"></div>
+        <div id="work"></div>
+        <div id="subscription"></div>
+        <div id="travel">
+            <img src="/assets/images/travel.png" alt="Travel" class="travel__image">
+        </div>
+        
+        <!-- Other content -->
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

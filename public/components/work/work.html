@@ -1,0 +1,214 @@
+<!-- The work component -->
+<div class="work">
+    <div class="work__header"> <!-- The work header -->
+        <div class="work__title-wrapper">
+            <h2 class="work__title">Find Work In Australia</h2>
+        </div>
+        <sl-switch
+            class="work__toggle"
+            id="viewToggle"
+            aria-label="Toggle map view"
+        >
+            <sl-icon name="map" slot="suffix"></sl-icon> <!-- The map icon -->
+        </sl-switch>
+    </div>
+
+    <div class="work__container"> <!-- The work container -->
+        <div class="work__search"> <!-- The work search -->
+            <div class="search-field"> <!-- The search field -->
+                <sl-input placeholder="Key words" size="large" clearable> <!-- The search input -->
+                    <sl-icon
+                        slot="prefix"
+                        name="search"
+                        style="margin-left: 1rem"
+                    ></sl-icon>
+                </sl-input>
+            </div>
+
+            <div class="search-field"> <!-- The search field -->
+                <sl-select placeholder="Industry" size="large"> <!-- The search select, can be used to filter the jobs by industry -->
+                    <sl-option value="hospitality">Hospitality</sl-option> 
+                    <sl-option value="agriculture">Agriculture</sl-option>
+                    <sl-option value="retail">Retail</sl-option>
+                </sl-select>
+            </div>
+
+            <div class="search-field">
+                <sl-select placeholder="Location" size="large">
+                    <sl-option value="wa">Western Australia</sl-option>
+                    <sl-option value="vic">Victoria</sl-option>
+                    <sl-option value="qld">Queensland</sl-option>
+                </sl-select>
+            </div>
+
+            <div class="search-field">
+                <sl-select placeholder="Work Type" size="large">
+                    <sl-option value="casual">Casual</sl-option>
+                    <sl-option value="full-time">Full Time</sl-option>
+                    <sl-option value="part-time">Part Time</sl-option>
+                </sl-select>
+            </div>
+        </div>
+
+        <div class="work-container"> <!-- The work container -->
+            <div class="work__list-view"> <!-- The work list view -->
+                <div class="work__grid"> <!-- The work grid -->
+                    <div class="work__job-list">
+                        <!-- Job Cards -->
+                        <div class="job-card">
+                            <div class="job-card__logo">
+                                <img
+                                    src="/assets/images/costa.png"
+                                    alt="Costa Berries"
+                                />
+                                <p class="job-card__badge">Casual</p>
+                            </div>
+                            <div class="job-card__content"> <!-- The job card content -->
+                                <h3>Fruit Picker - Costa Berries (WA)</h3>
+                                <p>Costa Berries Farm</p>
+                                <p>Gingin WA 6503</p>
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="job-card__logo">
+                                <img
+                                    src="/assets/images/waitress.png"
+                                    alt="Costa Berries"
+                                />
+                                <p class="job-card__badge">Part-Time</p>
+                            </div>
+                            <div class="job-card__content">
+                                <h3>Waitress - Melbourne City Mall (VIC)</h3>
+                                <p>Thailand Hotel</p>
+                                <p>Melbourne VIC 3000</p>
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="job-card__logo">
+                                <img
+                                    src="/assets/images/ciao.png"
+                                    alt="Costa Berries"
+                                />
+                                <p class="job-card__badge">Casual</p>
+                            </div>
+                            <div class="job-card__content">
+                                <h3>Kitchen Hand - Claremont Perth (WA)</h3>
+                                <p>Ciao Italian Restaurant</p>
+                                <p>Perth WA 6000</p>
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="job-card__logo">
+                                <img
+                                    src="/assets/images/uber.png"
+                                    alt="Costa Berries"
+                                />
+                                <p class="job-card__badge">Full-Time</p>
+                            </div>
+                            <div class="job-card__content">
+                                <h3>Driver - Noosa Town (QLD)</h3>
+                                <p>Uber Eats</p>
+                                <p>Noosa QLD 4567</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__job-details">
+                        <h3>Job Details</h3>
+                        <div class="details-grid">
+                            <div class="details-item">
+                                <div class="details-item__icon">
+                                    <sl-icon name="currency-dollar"></sl-icon>
+                                    <h4>Pay</h4>
+                                </div>
+                                <sl-badge variant="neutral"
+                                    >$60,000 - $70,000</sl-badge
+                                >
+                            </div>
+                            <div class="details-item">
+                                <div class="details-item__icon">
+                                    <sl-icon name="briefcase"></sl-icon>
+                                    <h4>Job Type</h4>
+                                </div>
+                                <sl-badge variant="neutral"
+                                    >Casual Job</sl-badge
+                                >
+                            </div>
+                            <div class="details-item"> <!-- The details item -->
+                                <div class="details-item__icon">
+                                    <sl-icon name="clock"></sl-icon>
+                                    <h4>Shift and schedule</h4>
+                                </div>
+                                <div class="tags">
+                                    <sl-badge variant="neutral"
+                                        >8 hour shift</sl-badge
+                                    >
+                                    <sl-badge variant="neutral"
+                                        >shift work</sl-badge
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="job-description"> <!-- The job description -->
+                            <h4>Full job description</h4>
+                            <p>
+                                Costa Berries Farm in Gingin, WA 6503 is seeking
+                                casual Fruit Pickers to join our team. This role
+                                involves working outdoors in a fast-paced
+                                environment and requires attention to detail and
+                                physical endurance.
+                            </p>
+                        </div>
+                        <div class="job-description">
+                            <h4>Duties and Responsibilities:</h4>
+                            <ul class="job-description__list"> 
+                                <li>
+                                    Harvest fruit from plants according to
+                                    quality standards and seasonal schedules.
+                                </li>
+                                <li>
+                                    Inspect fruit for ripeness, quality, and
+                                    condition.
+                                </li>
+                                <li>
+                                    Handle fruit carefully to prevent damage and
+                                    ensure a high-quality yield.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="job-description">
+                            <h4>Skills and Experience:</h4>
+                            <ul class="job-description__list">
+                                <li>
+                                    No previous experience required, but at
+                                    least 6 months of farm work is a bonus.
+                                </li>
+                                <li>
+                                    Ability to work efficiently in outdoor
+                                    conditions.
+                                </li>
+                                <li>
+                                    Physical fitness and stamina for repetitive
+                                    tasks and long hours.
+                                </li>
+                                <li>
+                                    Positive attitude and the ability to work as
+                                    part of a team.
+                                </li>
+                                <li>
+                                    Basic understanding of safe fruit handling
+                                    and harvesting procedures.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__map-view hidden"> <!-- The work map view -->
+                <img src="/assets/images/map.png" alt="Map" /> <!-- The map image -->
+            </div>
+        </div>
+    </div>
+</div>
