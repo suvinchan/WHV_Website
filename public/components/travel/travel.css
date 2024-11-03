@@ -1,14 +1,32 @@
 .travel__image {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none; /* Hide by default on mobile */
 }
 
-.travel__image img {
-    max-width: 80%; 
-    width: 70%;
-    height: auto; 
+/* Show on tablets and up */
+@media screen and (min-width: 768px) {
+    .travel__image {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .travel__image img {
+        width: 85%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* Adjust size for desktop */
+@media screen and (min-width: 1024px) {
+    .travel__image {
+        padding: 4rem 2rem;
+    }
+    
+    .travel__image img {
+        width: 75%;
+    }
 }

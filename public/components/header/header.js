@@ -129,8 +129,39 @@ export class Header {
     }
 
     toggleMobileMenu() {
-        // Implement mobile menu toggle functionality
-        console.log('Toggle mobile menu')
+        const mobileMenu = document.querySelector('.header__mobile-menu');
+        const menuButton = document.querySelector('.header__menu-button');
+        
+        if (mobileMenu) {
+            const isActive = mobileMenu.classList.contains('active');
+            
+            if (isActive) {
+                // Close menu
+                gsap.to(mobileMenu, {
+                    translateY: '-100%',
+                    duration: 0.3,
+                    ease: 'power2.out',
+                    onComplete: () => {
+                        mobileMenu.classList.remove('active');
+                    }
+                });
+            } else {
+                // Open menu
+                mobileMenu.classList.add('active');
+                gsap.to(mobileMenu, {
+                    translateY: '0%',
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            }
+            
+            // Animate menu button
+            gsap.to(menuButton, {
+                rotation: isActive ? 0 : 180,
+                duration: 0.3,
+                ease: 'power2.out'
+            });
+        }
     }
 
     handleSearch(query) {
